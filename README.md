@@ -13,7 +13,7 @@ This library requires:
 - rllab (https://github.com/openai/rllab)
 - Tensorflow
 
-Examples
+Pendulum example
 ---
 
 Running the Pendulum-v0 gym environment:
@@ -27,7 +27,30 @@ You should get an "AverageReturn" of around -100 to -150
 
 2) Run imitation learning
 ```
-python scripts/pendulum_gcl.py
+python scripts/pendulum_irl.py
 ```
 
 The "OriginalTaskAverageReturn" should reach around -100 to -150
+
+3) Run GAIL as a comparison
+```
+python scripts/pendulum_gail.py
+```
+
+Ant example
+---
+
+1) Collect expert data
+```
+python scripts/ant_data_collect.py
+```
+
+2) Run AIRL
+```
+python scripts/ant_irl.py
+```
+
+3) Transfer to a disabled ant using the parameters from step 2
+```
+python scripts/ant_transfer_disabled.py
+```
