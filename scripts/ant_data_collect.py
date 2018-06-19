@@ -30,7 +30,7 @@ def main(exp_name, ent_wt=1.0):
             exp_name=exp_name,
         )
         with rllab_logdir(algo=algo, dirname='data/ant_data_collect/%s'%exp_name):
-            algo.train()
+            algo.train(sess=sess)
 
 if __name__ == "__main__":
     params_dict = {
