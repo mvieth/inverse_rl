@@ -1,0 +1,1 @@
+{"max_path_length": 500, "sess": "Session", "env": "TfEnv", "batch_size": 20000, "store_paths": true, "n_itr": 1500, "exp_name": "2018_05_25_13_42_59_0", "entropy_weight": 0.1, "__clsname__": "TRPO", "policy": "GaussianMLPPolicy", "baseline": "LinearFeatureBaseline", "discount": 0.99, "optimizer": "ConjugateGradientOptimizer"}
