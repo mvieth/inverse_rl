@@ -1,5 +1,9 @@
 # Inverse RL
 
+This github: https://github.com/mvieth/inverse_rl
+
+The original authors' github: https://github.com/justinjfu/inverse_rl
+
 Implementations for imitation learning / IRL algorithms in RLLAB
 
 Contains:
@@ -54,3 +58,12 @@ python scripts/ant_irl.py
 ```
 python scripts/ant_transfer_disabled.py
 ```
+
+4) Load a policy, execute it, and capture the video
+```
+python scripts/ant_demonstrate.py
+```
+
+Trained models
+---
+The `data` folder contains data from the executed scripts. The pickle files (.pkl) contain the learned policies, among other things.
